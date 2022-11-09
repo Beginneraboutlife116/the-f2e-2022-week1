@@ -3,7 +3,7 @@ import Characters from "./components/characters"
 function App() {
   return (
     <main>
-      <Characters className="scroll__characters" />
+      <Characters />
     </main>
   )
 }
