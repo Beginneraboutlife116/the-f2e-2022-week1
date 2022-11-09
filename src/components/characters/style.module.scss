@@ -1,0 +1,14 @@
+.characters {
+  display: flex;
+  background-image: url("../../assets/main/road.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  translate: -50%;
+  width: 93.1vw;
+  // to 43.7vw;
+  // use scale?
+}
