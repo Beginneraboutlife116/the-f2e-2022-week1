@@ -1,0 +1,29 @@
+:root {
+  --clr-primary-100: hsla(195, 41%, 78%, 1);
+  --clr-primary-400: hsla(195, 100%, 34%, 1);
+  --clr-primary-900: hsla(195, 100%, 15%, 1);
+
+  --clr-secondary-100: hsla(40, 100%, 83%, 1);
+  --clr-secondary-400: hsla(32, 100%, 75%, 1);
+  --clr-secondary-900: hsla(22, 48%, 43%, 1);
+
+  --clr-highlight-100: hsla(11, 100%, 82%, 1);
+  --clr-highlight-400: hsla(8, 100%, 61%, 1);
+  --clr-highlight-900: hsla(8, 77%, 45%, 1);
+
+  @for $i from 0 to 6 {
+    --clr-black-#{(6 - $i) * 100}: hsla(0, 0%, #{$i * 20 * 1%}, 1);
+  }
+
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--clr-secondary-400);
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
