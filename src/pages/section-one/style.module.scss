@@ -1,0 +1,53 @@
+@use "../../sass/mixins" as *;
+
+@mixin center-banner($bg-clr, $clr) {
+  width: fit-content;
+  margin-inline: auto;
+  border-radius: 99em;
+  background-color: $bg-clr;
+  color: $clr;
+}
+
+.one {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  background-image: url("../../assets/bg/bg_decorate_01.png"),
+    url("../../assets/bg/bg_decorate_05.png");
+  background-repeat: no-repeat;
+  background-position: -15% 85%, 115% 85%;
+  background-size: 7.0625rem, 7.9375rem;
+}
+
+.logo {
+  width: clamp(15.8125rem, calc(-37.56rem + 106.75vw), 42.5rem);
+  margin-block: 5.6875rem 0.75rem;
+}
+
+.title {
+  // * 1200px -> 2.9375rem
+  @include center-banner(
+    $bg-clr: var(--clr-highlight-400),
+    $clr: var(--clr-black-100)
+  );
+  margin-block-end: 1.25rem;
+  padding: 0.175em 0.75em;
+}
+
+.list {
+  @include grid-gap($gap: 1.25rem);
+
+  &__title {
+    color: var(--clr-primary-400);
+    margin-block-end: 0.5rem;
+  }
+
+  &__banner {
+    display: flex;
+    @include center-banner(
+      $bg-clr: var(--clr-primary-400),
+      $clr: var(--clr-black-100)
+    );
+    padding: 0.22em 1.11em;
+  }
+}
