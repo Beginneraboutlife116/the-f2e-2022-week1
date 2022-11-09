@@ -1,0 +1,10 @@
+.header {
+  position: fixed;
+  inset: 0 0 auto;
+  padding-block-start: clamp(0.75rem, calc(-1.5rem + 4.5vw), 1.875rem);
+
+  &__picture {
+    width: 8.3125rem;
+    margin-inline: auto;
+  }
+}
