@@ -5,6 +5,14 @@ import style from "./style.module.scss"
 export default function SectionOne() {
   return (
     <section className={style.one}>
+      <div className={style.signal}>
+        <p className={style.signal__title}>READY ?</p>
+        <div className={style.signal__frame}>
+          <div className={style.signal__left}></div>
+          <div className={style.signal__middle}></div>
+          <div className={style.signal__right}></div>
+        </div>
+      </div>
       <img src={logo} alt="logo" className={style.logo}></img>
       <h1 className={style.title}>互動式網頁設計</h1>
       <ul className={style.list}>
