@@ -1,7 +1,8 @@
 import Characters from "./components/characters"
 import Header from "./components/header"
-import SectionOne from "./pages/section-one"
 import Sidebar from "./components/sidebar"
+import SectionOne from "./pages/section-one"
+import SectionTwo from "./pages/section-two"
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Header />
       <Characters />
       <SectionOne />
+      <SectionTwo />
     </main>
   )
 }
