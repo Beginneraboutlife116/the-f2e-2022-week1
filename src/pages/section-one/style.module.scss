@@ -7,21 +7,20 @@
 }
 
 .one {
-  display: grid;
-  justify-content: center;
-  // TODO - 要設定高度min-height: 100vh;
-  // min-height: 100vh;
+  min-height: 100vh;
   text-align: center;
   background-image: url("../../assets/bg/bg_decorate_01.png"),
     url("../../assets/bg/bg_decorate_05.png");
   background-repeat: no-repeat;
-  background-position: -15% 85%, 115% 85%;
+  background-position: -15% 60%, 115% 60%;
   background-size: 7.0625rem, 7.9375rem;
+  padding-block-start: 5.6875rem;
 }
 
 .logo {
   width: clamp(15.8125rem, calc(-37.56rem + 106.75vw), 42.5rem);
-  margin-block: 5.6875rem 0.75rem;
+  margin-block-end: 0.75rem;
+  margin-inline: auto;
 }
 
 .title {
