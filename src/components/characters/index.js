@@ -4,7 +4,6 @@ import characterTeam from "../../assets/character/character_team.gif"
 import styles from "./style.module.scss"
 
 export default function Characters() {
-  // TODO: test gsap scrolling
   return (
     <div className={styles.characters}>
       <div>

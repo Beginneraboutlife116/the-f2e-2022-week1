@@ -49,7 +49,6 @@ export default function Sidebar() {
             toggle ? style.btn__toggle_open : style.btn__toggle_close
           }`}></button>
       </aside>
-      {/* // TODO: 在重試一下 */}
       <div className={style.backdrop}></div>
     </>
   )
