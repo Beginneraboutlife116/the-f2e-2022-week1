@@ -3,14 +3,13 @@ import questionOne from "../../assets/main/question_1.png"
 import questionTwo from "../../assets/main/question_2.png"
 import questionThreeMobile from "../../assets/main/question_3_m.png"
 import questionThree from "../../assets/main/question_3.png"
+import { BannerHeader } from "../../components/header"
 import style from "./style.module.scss"
 
 export default function SectionTwo() {
   return (
     <section>
-      <header className={style.header}>
-        <h3 className={style.header__title}>你是否也有以下困擾？</h3>
-      </header>
+      <BannerHeader title="你是否也有以下困擾？" />
       <section className={style.section}>
         <ul className={style.list}>
           <li>
