@@ -1,0 +1,113 @@
+.sidebar {
+  min-width: 9.6875rem;
+  height: 100vh;
+  background-color: var(--clr-primary-400);
+  position: fixed;
+  z-index: 3;
+  display: grid;
+  justify-content: center;
+  padding-block-start: 2.5rem;
+  transition: translate 0.25s;
+
+  &_open {
+    translate: 0;
+  }
+  &_close {
+    translate: -100% 0;
+  }
+}
+
+.list {
+  display: grid;
+  gap: 2.5rem;
+  font-size: 1.125rem;
+  color: var(--clr-secondary-400);
+  &__item {
+    display: grid;
+    gap: 0.25rem;
+    &:hover {
+      color: var(--clr-secondary-100);
+      & .btn__info {
+        background-image: url("../../assets/ic/ic_menu_info_h.png");
+      }
+      & .btn__list {
+        background-image: url("../../assets/ic/ic_menu_list_h.png");
+      }
+      & .btn__strategy {
+        background-image: url("../../assets/ic/ic_menu_strategy_h.png");
+      }
+      & .btn__job {
+        background-image: url("../../assets/ic/ic_menu_job_h.png");
+      }
+    }
+  }
+}
+
+.btn {
+  &__info,
+  &__list,
+  &__strategy,
+  &__job {
+    aspect-ratio: 1;
+    background-size: cover;
+    width: 3.75rem;
+  }
+  &__toggle {
+    aspect-ratio: 1;
+    background-size: cover;
+    width: clamp(2.5rem, calc(0rem + 5vw), 3.75rem);
+    position: absolute;
+    left: 100%;
+    top: 0.75rem;
+
+    &_close {
+      background-image: url("../../assets/btn/btn_burger_open.png");
+      &:hover {
+        background-image: url("../../assets/btn/btn_burger_open_h.png");
+      }
+      &:active {
+        background-image: url("../../assets/btn/btn_burger_open_p.png");
+      }
+    }
+
+    &_open {
+      background-image: url("../../assets/btn/btn_burger_close.png");
+      &:hover {
+        background-image: url("../../assets/btn/btn_burger_close_h.png");
+      }
+      &:active {
+        background-image: url("../../assets/btn/btn_burger_close_p.png");
+      }
+    }
+  }
+  &__info {
+    background-image: url("../../assets/ic/ic_menu_info.png");
+  }
+  &__list {
+    background-image: url("../../assets/ic/ic_menu_list.png");
+  }
+  &__strategy {
+    background-image: url("../../assets/ic/ic_menu_strategy.png");
+  }
+  &__job {
+    background-image: url("../../assets/ic/ic_menu_job.png");
+  }
+}
+
+.backdrop {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  background-color: var(--clr-secondary-400);
+  opacity: 0;
+  transition: opacity 0.25s;
+
+  .sidebar_open + & {
+    opacity: 0.75;
+  }
+
+  .sidebar_close + & {
+    display: none;
+  }
+}

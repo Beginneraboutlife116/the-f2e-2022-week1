@@ -17,8 +17,9 @@ ul {
   padding: 0;
 }
 
-a:not([class]) {
-  text-decoration-skip-ink: all;
+a:where(:link, :visited, :active) {
+  text-decoration: none;
+  color: inherit;
 }
 
 :where(img, picture, video, canvas, svg) {

@@ -4,7 +4,7 @@ import style from "./style.module.scss"
 export default function Header() {
   return (
     <header className={style.header}>
-      <a href="https://2022.thef2e.com/">
+      <a href="https://2022.thef2e.com/" target="blank">
         {/* // TODO: 要利用picture的方式載入不同的圖片 */}
         <img
           src={logoText}
