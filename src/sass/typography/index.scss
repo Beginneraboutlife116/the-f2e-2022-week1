@@ -15,6 +15,7 @@
 }
 
 :root {
+  --fz-20to24: clamp(1.25rem, calc(0.75rem + 1vw), 1.5rem);
   --fz-20to32: clamp(1.25rem, calc(-0.25rem + 3vw), 2rem);
   --fz-28to60: clamp(1.75rem, calc(-2.25rem + 8vw), 3.75rem);
   --fz-24to44: clamp(1.5rem, calc(-1rem + 5vw), 2.75rem);
