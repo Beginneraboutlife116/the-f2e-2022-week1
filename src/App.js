@@ -4,6 +4,7 @@ import Sidebar from "./components/sidebar"
 import SectionOne from "./pages/section-one"
 import SectionTwo from "./pages/section-two"
 import SectionThree from "./pages/section-three"
+import SectionFour from "./pages/section-four"
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <SectionOne />
       <SectionTwo />
       <SectionThree />
+      <SectionFour />
     </main>
   )
 }

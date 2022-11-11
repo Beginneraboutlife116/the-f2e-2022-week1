@@ -8,7 +8,7 @@ import style from "./style.module.scss"
 
 export default function SectionTwo() {
   return (
-    <section>
+    <section className="section">
       <BannerHeader title="你是否也有以下困擾？" />
       <section className={style.section}>
         <ul className={style.list}>

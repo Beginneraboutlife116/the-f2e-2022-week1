@@ -7,7 +7,7 @@ import style from "./style.module.scss"
 
 export default function SectionThree() {
   return (
-    <section className={style.section}>
+    <section className="section">
       <BannerHeader title="本屆主題：互動式網頁設計？" />
       <p className={style.title}>以下兩個角色進行攜手合作</p>
       <ul className={style.list}>

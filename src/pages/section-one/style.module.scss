@@ -45,6 +45,7 @@
 
   &__banner {
     display: flex;
+    gap: 0.25rem;
     @include center-banner(
       $bg-clr: var(--clr-primary-400),
       $clr: var(--clr-black-100)

@@ -1,5 +1,5 @@
 import logo from "../../assets/logo/logo.svg"
-import icUser from "../../assets/ic/users.png"
+import icUser from "../../assets/ic/users.svg"
 import style from "./style.module.scss"
 
 export default function SectionOne() {
