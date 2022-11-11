@@ -1,10 +1,4 @@
-@mixin center-banner($bg-clr, $clr) {
-  width: fit-content;
-  margin-inline: auto;
-  border-radius: 99em;
-  background-color: $bg-clr;
-  color: $clr;
-}
+@use "/src/sass/utility" as *;
 
 .one {
   min-height: 100vh;
@@ -25,7 +19,7 @@
 
 .title {
   // * 1200px -> 2.9375rem
-  @include center-banner(
+  @include central-pill(
     $bg-clr: var(--clr-highlight-400),
     $clr: var(--clr-black-100)
   );
@@ -46,7 +40,7 @@
   &__banner {
     display: flex;
     gap: 0.25rem;
-    @include center-banner(
+    @include central-pill(
       $bg-clr: var(--clr-primary-400),
       $clr: var(--clr-black-100)
     );
@@ -61,6 +55,7 @@
   width: clamp(7.5rem, calc(-11.87rem + 38.75vw), 17.1875rem);
   &__title {
     color: var(--clr-highlight-400);
+    font-size: 0.875rem;
   }
   &__frame {
     background-size: contain;

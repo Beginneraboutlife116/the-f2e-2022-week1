@@ -24,16 +24,16 @@
 
 body {
   font-family: "Gen Jyuu Gothic P", Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: var(--fz-16to18);
+  font-size: var(--fz-18to24);
   font-weight: 700;
-  line-height: 1.6;
+  line-height: 1.4;
   letter-spacing: 0.05em;
 }
 
-strong {
-  font-size: var(--fz-18to24);
-  line-height: 1.4;
-}
+// strong {
+//   font-size: var(--fz-18to24);
+//   line-height: 1.4;
+// }
 
 h1,
 h2 {
@@ -52,7 +52,7 @@ h3 {
   font-size: var(--fz-24to44);
   line-height: 1.4;
 
-  @media (min-width: 64rem) {
+  @media (min-width: 75rem) {
     line-height: 1.25;
   }
 }

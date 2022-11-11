@@ -1,0 +1,11 @@
+@mixin central-pill($bg-clr, $clr) {
+  width: fit-content;
+  margin-inline: auto;
+  border-radius: 99em;
+  background-color: $bg-clr;
+  color: $clr;
+}
+
+.section {
+  padding-block-end: 3.75rem;
+}
