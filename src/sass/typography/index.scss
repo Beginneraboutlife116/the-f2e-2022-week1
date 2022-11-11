@@ -14,7 +14,6 @@
   font-weight: 700;
 }
 
-// TODO: 要統整字體成CSS variable，因為有些heading的排列是不太正確的
 :root {
   --fz-20to32: clamp(1.25rem, calc(-0.25rem + 3vw), 2rem);
   --fz-28to60: clamp(1.75rem, calc(-2.25rem + 8vw), 3.75rem);

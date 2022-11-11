@@ -9,7 +9,7 @@ export default function SectionThree() {
   return (
     <section className={style.section}>
       <BannerHeader title="本屆主題：互動式網頁設計？" />
-      <h5 className={style.title}>以下兩個角色進行攜手合作</h5>
+      <p className={style.title}>以下兩個角色進行攜手合作</p>
       <ul className={style.list}>
         <li className={style.list__item}>
           <img srcSet={characterF2e} alt="f2e icon" />
@@ -18,7 +18,7 @@ export default function SectionThree() {
             <a href="https://2022.thef2e.com/signup" target="blank">
               <SignUpButton className={style["btn__sign-up"]} />
             </a>
-            <h4>前端工程師</h4>
+            <p className={style.cta__title}>前端工程師</p>
           </div>
         </li>
         <li className={style.list__item}>
@@ -27,7 +27,7 @@ export default function SectionThree() {
             <a href="https://2022.thef2e.com/signup" target="blank">
               <SignUpButton className={style["btn__sign-up"]} />
             </a>
-            <h4>UI設計師</h4>
+            <p className={style.cta__title}>UI設計師</p>
           </div>
           <img srcSet={characterUi} alt="f2e icon" />
         </li>
@@ -38,7 +38,7 @@ export default function SectionThree() {
             <a href="https://2022.thef2e.com/signup" target="blank">
               <SignUpButton className={style["btn__sign-up"]} />
             </a>
-            <h4>團體組(UI+前端)</h4>
+            <p className={style.cta__title}>團體組(UI+前端)</p>
           </div>
         </li>
       </ul>

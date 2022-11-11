@@ -18,7 +18,7 @@ export function Header() {
 export function BannerHeader({ title }) {
   return (
     <header className={style.header__banner}>
-      <h3 className={style.header__banner_title}>{title}</h3>
+      <h2 className={style.header__banner_title}>{title}</h2>
     </header>
   )
 }

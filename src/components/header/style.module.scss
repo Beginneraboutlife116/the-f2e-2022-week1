@@ -18,5 +18,8 @@
     background-repeat: no-repeat;
     padding-block-start: clamp(0.75rem, calc(-1rem + 3.5vw), 1.625rem);
     color: var(--clr-primary-400);
+    &_title {
+      font-size: var(--fz-24to44);
+    }
   }
 }
