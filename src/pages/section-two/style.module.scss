@@ -1,13 +1,3 @@
-.header {
-  text-align: center;
-  height: 72px;
-  background-image: url("../../assets/bg/bg_talking_c.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  padding-block-start: clamp(0.75rem, calc(-1rem + 3.5vw), 1.625rem);
-  color: var(--clr-primary-400);
-}
-
 .section {
   padding-block-start: clamp(3.75rem, calc(2.75rem + 2vw), 4.25rem);
   padding-block-end: 3.75rem;

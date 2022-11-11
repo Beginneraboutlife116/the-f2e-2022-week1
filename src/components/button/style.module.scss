@@ -1,0 +1,19 @@
+.sign-up {
+  background-image: url("../../assets/btn/btn_join.svg");
+  &:hover {
+    background-image: url("../../assets/btn/btn_join_h.svg");
+  }
+}
+
+.join-hand {
+  animation: shake 0.25s ease-out infinite;
+}
+
+@keyframes shake {
+  from {
+    translate: 0% -5%;
+  }
+  to {
+    translate: 0% 5%;
+  }
+}

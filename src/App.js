@@ -14,6 +14,7 @@ function App() {
         className="btn__user">
         <button aria-label="前往F2E個人頁面"></button>
       </a>
+      {/* // TODO: 要載擺上一個「立即報名」的按鈕 */}
       <Sidebar />
       <Header />
       <Characters />

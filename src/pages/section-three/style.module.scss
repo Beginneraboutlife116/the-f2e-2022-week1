@@ -1,0 +1,39 @@
+.section {
+  padding-block-end: 3.75rem;
+}
+
+.title {
+  text-align: center;
+  color: var(--clr-secondary-900);
+  margin-block-end: clamp(2.5rem, calc(-0.5rem + 6vw), 4rem);
+}
+
+.list {
+  display: grid;
+  gap: 1.25rem;
+  &__item {
+    padding-inline: 1.25rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+  }
+}
+
+.btn__sign-up {
+  width: 6.4375rem;
+  height: 3.75rem;
+  margin-block: 0.25rem 1rem;
+}
+
+.cta {
+  $parent: &;
+  display: grid;
+  justify-items: center;
+  color: var(--clr-primary-400);
+  &__hand {
+    visibility: hidden;
+    #{$parent}:hover & {
+      visibility: inherit;
+    }
+  }
+}
