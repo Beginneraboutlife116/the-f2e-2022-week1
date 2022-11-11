@@ -25,6 +25,12 @@ function App() {
       <SectionThree />
       <SectionFour />
       <SectionFive />
+      <section className="hero">
+        <h2 className="hero__title">
+          <p>區區修煉</p>
+          <p>已經無法滿足了嗎？</p>
+        </h2>
+      </section>
     </main>
   )
 }

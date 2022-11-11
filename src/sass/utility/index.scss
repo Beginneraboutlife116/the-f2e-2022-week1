@@ -27,3 +27,11 @@
     background-image: url("../../assets/btn/btn_user_p.png");
   }
 }
+
+.hero {
+  text-align: center;
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  color: var(--clr-highlight-400);
+}
