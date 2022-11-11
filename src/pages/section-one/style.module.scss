@@ -19,12 +19,14 @@
 
 .title {
   // * 1200px -> 2.9375rem
-  @include central-pill(
+  @include pill(
+    $padding: 0.175em 0.75em,
     $bg-clr: var(--clr-highlight-400),
     $clr: var(--clr-black-100)
   );
   margin-block-end: 1.25rem;
-  padding: 0.175em 0.75em;
+  width: fit-content;
+  margin-inline: auto;
 }
 
 .list {
@@ -37,14 +39,16 @@
     font-size: var(--fz-20to32);
   }
 
-  &__banner {
+  &__pill {
     display: flex;
     gap: 0.25rem;
-    @include central-pill(
+    width: fit-content;
+    margin-inline: auto;
+    @include pill(
+      $padding: 0.22em 1.11em,
       $bg-clr: var(--clr-primary-400),
       $clr: var(--clr-black-100)
     );
-    padding: 0.22em 1.11em;
   }
 }
 

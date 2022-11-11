@@ -1,3 +1,5 @@
+@use "../../sass/utility" as *;
+
 .section {
   padding-block-end: 3.75rem;
 }
@@ -38,19 +40,24 @@
 }
 
 .pill {
-  padding: 0.25rem 1.5rem;
-  border-radius: 99em;
-  border: 0.125rem solid var(--clr-secondary-900);
-  color: var(--clr-secondary-900);
-  font-size: var(--fz-18to24);
-  &_invert {
+  @include pill(
+    $padding: 0.22em 1.33em,
+    $bg-clr: var(--clr-secondary-900),
+    $clr: var(--clr-black-100)
+  );
+  font-size: 1.125rem;
+  margin-block-start: 0.5rem;
+  &_outline {
     --lh: 1.6;
     --fw: 500;
     --ls: 0.02em;
-    background-color: var(--clr-secondary-900);
-    color: var(--clr-black-100);
-    font-size: 1.125rem;
-    margin-block-start: 0.5rem;
+    @include pill(
+      $padding: 0.22em 1.33em,
+      $bg-clr: transparent,
+      $clr: var(--clr-secondary-900)
+    );
+    border: 0.125rem solid var(--clr-secondary-900);
+    font-size: var(--fz-18to24);
   }
 }
 

@@ -3,7 +3,7 @@ import style from './style.module.scss'
 
 export function SignUpButton(props) {
   return (
-    <button className={`${style["sign-up"]} ${props.className}`} aria-label="立即報名"></button>
+    <button className={`${style["sign-up"]} ${props.className ? props.className : style["sign-up_normal"]}`} aria-label="立即報名"></button>
   )
 }
 

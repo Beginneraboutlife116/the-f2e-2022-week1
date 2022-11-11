@@ -1,9 +1,8 @@
-@mixin central-pill($bg-clr, $clr) {
-  width: fit-content;
-  margin-inline: auto;
+@mixin pill($padding, $bg-clr, $clr) {
   border-radius: 99em;
   background-color: $bg-clr;
   color: $clr;
+  padding: $padding;
 }
 
 .section {

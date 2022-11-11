@@ -18,21 +18,21 @@ export default function SectionOne() {
       <ul className={style.list}>
         <li>
           <p className={style.list__title}>前端工程師</p>
-          <div className={style.list__banner}>
+          <div className={style.list__pill}>
             <img src={icUser} alt="users icon"></img>
             <span>920</span>
           </div>
         </li>
         <li>
           <p className={style.list__title}>UI設計師</p>
-          <div className={style.list__banner}>
+          <div className={style.list__pill}>
             <img src={icUser} alt="users icon"></img>
             <span>110</span>
           </div>
         </li>
         <li>
           <p className={style.list__title}>團體組</p>
-          <div className={style.list__banner}>
+          <div className={style.list__pill}>
             <img src={icUser} alt="users icon"></img>
             <span>41</span>
           </div>

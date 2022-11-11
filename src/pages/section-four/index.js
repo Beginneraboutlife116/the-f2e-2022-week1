@@ -20,17 +20,17 @@ export default function SectionFour() {
             <p className={style.week}>WEEK 1</p>
             <h3 className={style.list__title}>The F2E 活動網站設計</h3>
             <div className={style.info}>
-              <p className={style.pill}>Parallax Scrolling</p>
+              <p className={style.pill_outline}>Parallax Scrolling</p>
               <a
                 href="https://blockstudio.tw/"
                 target="blank"
-                className={style.pill}>
+                className={style.pill_outline}>
                 #版塊設計
               </a>
               <a
                 href="https://2022.thef2e.com/news/week1"
                 target="blank"
-                className={style.pill + " " + style.pill_invert}>
+                className={style.pill}>
                 查看關卡細節
               </a>
             </div>
@@ -42,17 +42,17 @@ export default function SectionFour() {
             <p className={style.week}>WEEK 2</p>
             <h3 className={style.list__title}>今晚，我想來點點簽</h3>
             <div className={style.info}>
-              <p className={style.pill}>Canvas</p>
+              <p className={style.pill_outline}>Canvas</p>
               <a
                 href="https://www.kdanmobile.com/zh-tw"
                 target="blank"
-                className={style.pill}>
+                className={style.pill_outline}>
                 #凱鈿行動科技
               </a>
               <a
                 href="https://2022.thef2e.com/news/week2"
                 target="blank"
-                className={style.pill + " " + style.pill_invert}>
+                className={style.pill}>
                 查看關卡細節
               </a>
             </div>
@@ -64,17 +64,17 @@ export default function SectionFour() {
             <p className={style.week}>WEEK 3</p>
             <h3 className={style.list__title}>Scrum 新手村</h3>
             <div className={style.info}>
-              <p className={style.pill}>JS draggable</p>
+              <p className={style.pill_outline}>JS draggable</p>
               <a
                 href="https://titansoft.com/tw"
                 target="blank"
-                className={style.pill}>
+                className={style.pill_outline}>
                 #鈦坦科技
               </a>
               <a
                 href="https://2022.thef2e.com/news/week3"
                 target="blank"
-                className={style.pill + " " + style.pill_invert}>
+                className={style.pill}>
                 查看關卡細節
               </a>
             </div>

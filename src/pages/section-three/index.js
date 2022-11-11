@@ -16,7 +16,7 @@ export default function SectionThree() {
           <div className={style.cta}>
             <JoinHand className={style.cta__hand} />
             <a href="https://2022.thef2e.com/signup" target="blank">
-              <SignUpButton className={style["btn__sign-up"]} />
+              <SignUpButton />
             </a>
             <p className={style.cta__title}>前端工程師</p>
           </div>
@@ -25,7 +25,7 @@ export default function SectionThree() {
           <div className={style.cta}>
             <JoinHand className={style.cta__hand} />
             <a href="https://2022.thef2e.com/signup" target="blank">
-              <SignUpButton className={style["btn__sign-up"]} />
+              <SignUpButton />
             </a>
             <p className={style.cta__title}>UI設計師</p>
           </div>
@@ -36,7 +36,7 @@ export default function SectionThree() {
           <div className={style.cta}>
             <JoinHand className={style.cta__hand} />
             <a href="https://2022.thef2e.com/signup" target="blank">
-              <SignUpButton className={style["btn__sign-up"]} />
+              <SignUpButton />
             </a>
             <p className={style.cta__title}>團體組(UI+前端)</p>
           </div>

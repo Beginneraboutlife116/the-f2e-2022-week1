@@ -3,6 +3,11 @@
   &:hover {
     background-image: url("../../assets/btn/btn_join_h.svg");
   }
+  &_normal {
+    width: 6.4375rem;
+    height: 3.75rem;
+    margin-block: 0.25rem 1rem;
+  }
 }
 
 .join-hand {
