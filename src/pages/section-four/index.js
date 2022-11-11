@@ -9,11 +9,9 @@ export default function SectionFour() {
     <section className="section">
       <BannerHeader title="年度最強合作，三大主題來襲" />
       <p className={style.title}>
-        <strong>
-          各路廠商強強聯手
-          <br />
-          共同設計出接地氣的網頁互動挑戰關卡
-        </strong>
+        各路廠商強強聯手
+        <br />
+        共同設計出接地氣的網頁互動挑戰關卡
       </p>
       <ul className={style.list}>
         <li className={style.list__item}>

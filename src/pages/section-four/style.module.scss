@@ -6,6 +6,7 @@
   text-align: center;
   color: var(--clr-secondary-900);
   margin-block-end: clamp(2.5rem, calc(-5rem + 15vw), 6.25rem);
+  font-size: var(--fz-20to24);
 }
 
 .list {
@@ -23,6 +24,7 @@
 }
 
 .week {
+  --lh: 1.25;
   color: var(--clr-highlight-400);
   font-size: var(--fz-28to60);
   margin-block-end: 0.5rem;
@@ -42,12 +44,12 @@
   color: var(--clr-secondary-900);
   font-size: var(--fz-18to24);
   &_invert {
+    --lh: 1.6;
+    --fw: 500;
+    --ls: 0.02em;
     background-color: var(--clr-secondary-900);
     color: var(--clr-black-100);
     font-size: 1.125rem;
-    font-weight: 500;
-    line-height: 1.6;
-    letter-spacing: 0.02em;
     margin-block-start: 0.5rem;
   }
 }
