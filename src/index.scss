@@ -5,6 +5,10 @@
 
 .section {
   padding-block-end: 3.75rem;
+  @media (min-width: 75em) {
+    padding-block-start: 2.5rem;
+    min-height: 100vh;
+  }
 }
 
 .btn__user {

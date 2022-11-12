@@ -14,6 +14,11 @@
     margin-block-end: 0.25rem;
     @include fz-20-32-750;
   }
+  @media (min-width: 75em) {
+    width: min(100%, 90rem);
+    margin-inline: auto;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .picture {
