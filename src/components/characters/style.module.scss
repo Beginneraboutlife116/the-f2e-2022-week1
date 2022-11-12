@@ -20,6 +20,7 @@
 
 .character {
   width: 7rem;
+  aspect-ratio: 3 / 5;
   &_middle {
     width: 7.375rem;
   }
@@ -28,5 +29,9 @@
     &_middle {
       width: clamp(19.9375rem, calc(10.38rem + 12.75vw), 23.125rem);
     }
+  }
+  &:last-child {
+    display: flex;
+    align-items: flex-end;
   }
 }
