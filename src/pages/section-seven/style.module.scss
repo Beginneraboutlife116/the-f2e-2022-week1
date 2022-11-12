@@ -33,6 +33,14 @@
   );
   border: 2px solid currentColor;
   font-size: 1.125rem;
+  &:hover {
+    @include pill(
+      0.22em 1.33em,
+      $bg-clr: var(--clr-secondary-900),
+      $clr: var(--clr-black-100)
+    );
+    border: none;
+  }
 }
 
 .list {
