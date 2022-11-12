@@ -15,9 +15,9 @@ export function Header() {
   )
 }
 
-export function BannerHeader({ title }) {
+export function BannerHeader({ title, className = "" }) {
   return (
-    <header className={style.header__banner}>
+    <header className={`${style.header__banner} ${className}`}>
       <h2 className={style.header__banner_title}>{title}</h2>
     </header>
   )

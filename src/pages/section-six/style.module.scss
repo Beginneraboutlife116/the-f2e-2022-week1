@@ -1,13 +1,21 @@
-.section {
-  padding-block-start: clamp(2.5rem, calc(0rem + 5vw), 3.75rem);
+.margin {
+  margin-block-end: clamp(2.5rem, calc(0rem + 5vw), 3.75rem);
+}
+
+.layout {
   display: grid;
   gap: 1.5rem;
   font-size: 1.5rem;
-  &__inner {
-    display: grid;
-    gap: 1.5rem;
-    padding-inline: 1.25rem;
-    color: var(--clr-primary-400);
+  color: var(--clr-primary-400);
+}
+
+.section {
+  display: grid;
+  gap: 1.5rem;
+  padding-inline: 1.25rem;
+  & h3 {
+    font-size: 2rem;
+    color: var(--clr-highlight-400);
   }
 }
 
@@ -17,11 +25,6 @@
   & img {
     grid-area: 1 / 1 / -1 / -1;
   }
-}
-
-.title {
-  font-size: 2rem;
-  color: var(--clr-highlight-400);
 }
 
 .list {

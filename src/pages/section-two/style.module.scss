@@ -1,13 +1,13 @@
-.section {
-  padding-block-start: clamp(3.75rem, calc(2.75rem + 2vw), 4.25rem);
-  padding-inline: 1.25rem;
-  color: var(--clr-highlight-400);
-  text-align: center;
+.margin {
+  margin-block-end: clamp(3.75rem, calc(2.75rem + 2vw), 4.25rem);
 }
 
 .list {
   display: grid;
   gap: 0.5rem;
+  padding-inline: 1.25rem;
+  color: var(--clr-highlight-400);
+  text-align: center;
   &__title {
     margin-block-end: 0.25rem;
     font-size: var(--fz-20to32);

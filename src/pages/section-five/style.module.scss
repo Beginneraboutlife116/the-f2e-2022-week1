@@ -1,7 +1,7 @@
 @use "../../sass/utility" as *;
 
-.section {
-  padding-block-start: clamp(4.25rem, calc(-4.87rem + 18.25vw), 8.8125rem);
+.margin {
+  margin-block-end: clamp(4.25rem, calc(-4.87rem + 18.25vw), 8.8125rem);
 }
 
 .list {

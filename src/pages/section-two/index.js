@@ -9,29 +9,27 @@ import style from "./style.module.scss"
 export default function SectionTwo() {
   return (
     <section className="section">
-      <BannerHeader title="你是否也有以下困擾？" />
-      <section className={style.section}>
-        <ul className={style.list}>
-          <li>
-            <p className={style.list__title}>羨慕別人的酷酷網頁動畫？</p>
-            <picture>
-              <source srcSet={questionOne} media="(min-width: 75em)" />
-              <img src={questionOneMobile} alt="羨慕別人的酷酷網頁動畫？" />
-            </picture>
-          </li>
-          <li>
-            <p className={style.list__title}>滿足不了同事的許願？</p>
-            <img src={questionTwo} alt="滿足不了同事的許願？" />
-          </li>
-          <li>
-            <p className={style.list__title}>動畫技能樹太雜無從下手？</p>
-            <picture>
-              <source srcSet={questionThree} media="(min-width: 75em)" />
-              <img src={questionThreeMobile} alt="動畫技能樹太雜無從下手？" />
-            </picture>
-          </li>
-        </ul>
-      </section>
+      <BannerHeader title="你是否也有以下困擾？" className={style.margin} />
+      <ul className={style.list}>
+        <li>
+          <p className={style.list__title}>羨慕別人的酷酷網頁動畫？</p>
+          <picture>
+            <source srcSet={questionOne} media="(min-width: 75em)" />
+            <img src={questionOneMobile} alt="羨慕別人的酷酷網頁動畫？" />
+          </picture>
+        </li>
+        <li>
+          <p className={style.list__title}>滿足不了同事的許願？</p>
+          <img src={questionTwo} alt="滿足不了同事的許願？" />
+        </li>
+        <li>
+          <p className={style.list__title}>動畫技能樹太雜無從下手？</p>
+          <picture>
+            <source srcSet={questionThree} media="(min-width: 75em)" />
+            <img src={questionThreeMobile} alt="動畫技能樹太雜無從下手？" />
+          </picture>
+        </li>
+      </ul>
     </section>
   )
 }
