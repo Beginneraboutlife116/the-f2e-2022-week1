@@ -11,6 +11,17 @@
       width: 8.3125rem;
       margin-inline: auto;
     }
+
+    @media (min-width: 75em) {
+      background-color: transparent;
+      width: fit-content;
+      margin-inline-start: 2.5rem;
+      &_picture {
+        // TODO: 要用scroll方式顯示出來
+        display: none;
+        opacity: 0;
+      }
+    }
   }
   &__banner {
     text-align: center;
@@ -22,6 +33,34 @@
     color: var(--clr-primary-400);
     &-title {
       @include fz-24-60-1200;
+    }
+    @media (min-width: 75em) {
+      min-height: 9.4375rem;
+      width: fit-content;
+      margin-inline: auto;
+      position: relative;
+
+      $width: 6.16rem;
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        min-height: 9.4375rem;
+        // width: 98.57px;
+        width: $width;
+        background-size: 100% 100%;
+        top: 0;
+      }
+      &::before {
+        background-image: url("../../assets/bg/bg_talking_l.png");
+        // left: -98.57px;
+        left: -$width;
+      }
+      &::after {
+        background-image: url("../../assets/bg/bg_talking_r.png");
+        // right: -98.57px;
+        right: -$width;
+      }
     }
   }
 }
