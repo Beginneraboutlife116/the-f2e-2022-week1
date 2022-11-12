@@ -2,14 +2,19 @@
   text-align: center;
   color: var(--clr-secondary-900);
   margin-block-end: clamp(2.5rem, calc(-0.5rem + 6vw), 4rem);
-  font-size: var(--fz-20to24);
+  font-size: 1.25rem;
+  @media (min-width: 46.875em) {
+    font-size: 1.5rem;
+  }
 }
 
 .list {
   display: grid;
   gap: 1.25rem;
+  justify-items: center;
   &__item {
     padding-inline: 1.25rem;
+    width: min(100%, 29.875rem);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     place-items: center;
@@ -28,6 +33,9 @@
     }
   }
   &__title {
-    font-size: var(--fz-20to32);
+    font-size: 1.25rem;
+    @media (min-width: 46.875em) {
+      font-size: 2rem;
+    }
   }
 }

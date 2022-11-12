@@ -13,18 +13,22 @@ export default function SectionTwo() {
       <ul className={style.list}>
         <li>
           <p className={style.list__title}>羨慕別人的酷酷網頁動畫？</p>
-          <picture>
+          <picture className={style.picture}>
             <source srcSet={questionOne} media="(min-width: 75em)" />
             <img src={questionOneMobile} alt="羨慕別人的酷酷網頁動畫？" />
           </picture>
         </li>
         <li>
           <p className={style.list__title}>滿足不了同事的許願？</p>
-          <img src={questionTwo} alt="滿足不了同事的許願？" />
+          <img
+            src={questionTwo}
+            alt="滿足不了同事的許願？"
+            className={style.picture}
+          />
         </li>
         <li>
           <p className={style.list__title}>動畫技能樹太雜無從下手？</p>
-          <picture>
+          <picture className={style.picture}>
             <source srcSet={questionThree} media="(min-width: 75em)" />
             <img src={questionThreeMobile} alt="動畫技能樹太雜無從下手？" />
           </picture>

@@ -34,6 +34,10 @@
   display: grid;
   place-content: center;
   color: var(--clr-highlight-400);
+  font-size: 1.75rem;
+  @media (min-width: 75em) {
+    font-size: 3.75rem;
+  }
 }
 
 .cta {
@@ -41,6 +45,10 @@
   display: grid;
   place-items: center;
   text-align: center;
+  font-size: 1.75rem;
+  @media (min-width: 75em) {
+    font-size: 3.75rem;
+  }
   &__logo {
     width: clamp(14.125rem, calc(-22.62rem + 73.5vw), 32.5rem);
   }
