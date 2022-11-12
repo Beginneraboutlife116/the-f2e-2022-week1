@@ -6,6 +6,7 @@ import SectionTwo from "./pages/section-two"
 import SectionThree from "./pages/section-three"
 import SectionFour from "./pages/section-four"
 import SectionFive from "./pages/section-five"
+import SectionSix from "./pages/section-six"
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
           <p>已經無法滿足了嗎？</p>
         </h2>
       </section>
+      <SectionSix />
     </main>
   )
 }
