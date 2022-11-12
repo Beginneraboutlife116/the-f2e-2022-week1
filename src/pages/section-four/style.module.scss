@@ -56,7 +56,7 @@
       $bg-clr: transparent,
       $clr: var(--clr-secondary-900)
     );
-    border: 0.125rem solid var(--clr-secondary-900);
+    border: 0.125rem solid currentColor;
     font-size: var(--fz-18to24);
   }
 }

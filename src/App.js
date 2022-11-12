@@ -7,6 +7,7 @@ import SectionThree from "./pages/section-three"
 import SectionFour from "./pages/section-four"
 import SectionFive from "./pages/section-five"
 import SectionSix from "./pages/section-six"
+import SectionSeven from "./pages/section-seven"
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
         </h2>
       </section>
       <SectionSix />
+      <SectionSeven />
     </main>
   )
 }
