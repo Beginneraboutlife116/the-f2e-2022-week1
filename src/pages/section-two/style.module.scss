@@ -1,5 +1,9 @@
 @use "../../sass/typography" as *;
 
+.section {
+  position: relative;
+}
+
 .margin {
   margin-block-end: clamp(3.75rem, calc(2.75rem + 2vw), 4.25rem);
 }
@@ -24,4 +28,18 @@
 .picture {
   width: min(100%, 29.6875rem);
   margin-inline: auto;
+}
+
+.brush {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  translate: -50% 0;
+  width: 68.125rem;
+  justify-content: space-between;
+  &__left,
+  &__right {
+    width: 9.375rem;
+  }
 }

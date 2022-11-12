@@ -4,11 +4,12 @@ import questionTwo from "../../assets/main/question_2.png"
 import questionThreeMobile from "../../assets/main/question_3_m.png"
 import questionThree from "../../assets/main/question_3.png"
 import { BannerHeader } from "../../components/header"
+import brush from "../../assets/bg/bg_decorate_09.png"
 import style from "./style.module.scss"
 
 export default function SectionTwo() {
   return (
-    <section className="section">
+    <section className={"section " + style.section}>
       <BannerHeader title="你是否也有以下困擾？" className={style.margin} />
       <ul className={style.list}>
         <li>
@@ -34,6 +35,10 @@ export default function SectionTwo() {
           </picture>
         </li>
       </ul>
+      <div className={style.brush}>
+        <img src={brush} alt="草" className={style.brush__left} />
+        <img src={brush} alt="草" className={style.brush__right} />
+      </div>
     </section>
   )
 }
