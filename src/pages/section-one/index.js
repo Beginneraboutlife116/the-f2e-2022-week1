@@ -2,7 +2,7 @@ import logo from "../../assets/logo/logo.svg"
 import icUser from "../../assets/ic/users.svg"
 import style from "./style.module.scss"
 
-export default function SectionOne() {
+function SectionOne() {
   return (
     <section className={style.one}>
       <div className={style.signal}>
@@ -41,3 +41,5 @@ export default function SectionOne() {
     </section>
   )
 }
+
+export { SectionOne, logo }

@@ -1,13 +1,14 @@
 import Characters from "./components/characters"
 import { Header } from "./components/header"
 import Sidebar from "./components/sidebar"
-import SectionOne from "./pages/section-one"
+import { SectionOne, logo } from "./pages/section-one"
 import SectionTwo from "./pages/section-two"
 import SectionThree from "./pages/section-three"
 import SectionFour from "./pages/section-four"
 import SectionFive from "./pages/section-five"
 import SectionSix from "./pages/section-six"
 import SectionSeven from "./pages/section-seven"
+import { JoinHand, SignUpButton } from "./components/button"
 
 function App() {
   return (
@@ -35,6 +36,28 @@ function App() {
       </section>
       <SectionSix />
       <SectionSeven />
+      <section className="cta">
+        <div>
+          <a href="https://2022.thef2e.com/" target="blank">
+            <img src={logo} alt="Logo" className="cta__logo" />
+          </a>
+          <a
+            href="https://2022.thef2e.com/signup"
+            target="blank"
+            className="sign-up-button">
+            <JoinHand />
+            <SignUpButton />
+          </a>
+          <h2>立即報名</h2>
+        </div>
+      </section>
+      {/* <div className="stick-sign-up">
+        <p>JOIN</p>
+        <JoinHand />
+        <a href="https://2022.thef2e.com/signup" target="blank">
+          <SignUpButton />
+        </a>
+      </div> */}
     </main>
   )
 }
