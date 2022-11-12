@@ -14,25 +14,86 @@
   font-weight: 700;
 }
 
-:root {
-  --fz-16to18: clamp(1rem, calc(0.75rem + 0.5vw), 1.125rem);
-  --fz-18to24: clamp(1.25rem, calc(0.38rem + 1.5vw), 1.5rem);
-  --fz-20to24: clamp(1.25rem, calc(0.75rem + 1vw), 1.5rem);
-  --fz-20to32: clamp(1.25rem, calc(-0.25rem + 3vw), 2rem);
-  --fz-24to44: clamp(1.5rem, calc(-1rem + 5vw), 2.75rem);
-  --fz-24to60: clamp(1.5rem, calc(-3rem + 9vw), 3.75rem);
-  --fz-28to60: clamp(1.75rem, calc(-2.25rem + 8vw), 3.75rem);
+@mixin fz-18-24-750 {
+  font-size: 1.125rem;
+  @media (min-width: 46.875em) {
+    font-size: 1.5rem;
+  }
+}
+
+@mixin fz-24-60-750 {
+  font-size: 1.5rem;
+  @media (min-width: 46.875em) {
+    font-size: 3.75rem;
+  }
+}
+
+@mixin fz-24-60-1200 {
+  font-size: 1.5rem;
+  @media (min-width: 75em) {
+    font-size: 3.75rem;
+  }
+}
+
+@mixin fz-20-24-750 {
+  font-size: 1.25rem;
+  @media (min-width: 46.875em) {
+    font-size: 1.5rem;
+  }
+}
+
+@mixin fz-20-24-1200 {
+  font-size: 1.25rem;
+  @media (min-width: 75em) {
+    font-size: 1.5rem;
+  }
+}
+
+@mixin fz-20-32-750 {
+  font-size: 1.25rem;
+  @media (min-width: 46.875em) {
+    font-size: 2rem;
+  }
+}
+
+@mixin fz-20-32-1200 {
+  font-size: 1.25rem;
+  @media (min-width: 75em) {
+    font-size: 2rem;
+  }
+}
+
+@mixin fz-24-44-750 {
+  font-size: 1.5rem;
+  @media (min-width: 46.875em) {
+    font-size: 2.75rem;
+  }
+}
+
+@mixin fz-28-60-750 {
+  font-size: 1.75rem;
+  @media (min-width: 46.875em) {
+    font-size: 3.75rem;
+  }
+}
+
+@mixin fz-28-60-1200 {
+  font-size: 1.75rem;
+  @media (min-width: 75em) {
+    font-size: 3.75rem;
+  }
 }
 
 body {
   font-family: "Gen Jyuu Gothic P", Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 1.25rem;
   font-weight: var(--fw, 700);
   line-height: var(--lh, 1.4);
   letter-spacing: var(--ls, 0.05em);
-  @media (min-width: 75em) {
-    font-size: 1.5rem;
-  }
+  // font-size: 1.25rem;
+  // @media (min-width: 75em) {
+  //   font-size: 1.5rem;
+  // }
+  @include fz-20-24-1200;
 }
 
 h1,
@@ -40,27 +101,8 @@ h2 {
   --lh: 1.25;
 }
 
-h1 {
-  font-size: var(--fz-20to32);
-}
-
-h2 {
-  font-size: var(--fz-28to60);
-}
-
 h3 {
-  font-size: var(--fz-24to44);
-  line-height: 1.4;
-
   @media (min-width: 75rem) {
     --lh: 1.25;
   }
-}
-
-h4 {
-  font-size: var(--fz-20to32);
-}
-
-h5 {
-  font-size: var(--fz-18to24);
 }

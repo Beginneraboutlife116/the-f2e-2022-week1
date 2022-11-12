@@ -1,11 +1,10 @@
+@use "../../sass/typography" as *;
+
 .title {
   text-align: center;
   color: var(--clr-secondary-900);
   margin-block-end: clamp(2.5rem, calc(-0.5rem + 6vw), 4rem);
-  font-size: 1.25rem;
-  @media (min-width: 46.875em) {
-    font-size: 1.5rem;
-  }
+  @include fz-20-24-750;
 }
 
 .list {
@@ -33,9 +32,6 @@
     }
   }
   &__title {
-    font-size: 1.25rem;
-    @media (min-width: 46.875em) {
-      font-size: 2rem;
-    }
+    @include fz-20-32-750;
   }
 }
