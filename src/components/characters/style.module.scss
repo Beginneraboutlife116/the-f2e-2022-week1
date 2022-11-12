@@ -14,4 +14,18 @@
   @media (min-width: 75em) {
     width: 73.4735rem;
   }
+  justify-content: center;
+}
+
+.character {
+  width: 7rem;
+  &_middle {
+    width: 7.375rem;
+  }
+  @media (min-width: 75em) {
+    width: clamp(18.875rem, calc(9.69rem + 12.25vw), 21.9375rem);
+    &_middle {
+      width: clamp(19.9375rem, calc(10.38rem + 12.75vw), 23.125rem);
+    }
+  }
 }
