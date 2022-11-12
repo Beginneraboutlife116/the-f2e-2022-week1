@@ -12,7 +12,11 @@ export default function SectionThree() {
       <p className={style.title}>以下兩個角色進行攜手合作</p>
       <ul className={style.list}>
         <li className={style.list__item}>
-          <img srcSet={characterF2e} alt="f2e icon" />
+          <img
+            srcSet={characterF2e}
+            alt="f2e icon"
+            className={style.list__picture}
+          />
           <div className={style.cta}>
             <JoinHand className={style.cta__hand} />
             <a href="https://2022.thef2e.com/signup" target="blank">
@@ -29,10 +33,18 @@ export default function SectionThree() {
             </a>
             <p className={style.cta__title}>UI設計師</p>
           </div>
-          <img srcSet={characterUi} alt="f2e icon" />
+          <img
+            srcSet={characterUi}
+            alt="f2e icon"
+            className={style.list__picture}
+          />
         </li>
         <li className={style.list__item}>
-          <img srcSet={characterTeam} alt="f2e icon" />
+          <img
+            srcSet={characterTeam}
+            alt="f2e icon"
+            className={style.list__picture}
+          />
           <div className={style.cta}>
             <JoinHand className={style.cta__hand} />
             <a href="https://2022.thef2e.com/signup" target="blank">
