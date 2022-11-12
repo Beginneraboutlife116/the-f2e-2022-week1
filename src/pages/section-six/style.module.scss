@@ -2,9 +2,12 @@
   padding-block-start: clamp(2.5rem, calc(0rem + 5vw), 3.75rem);
   display: grid;
   gap: 1.5rem;
+  font-size: 1.5rem;
   &__inner {
     display: grid;
     gap: 1.5rem;
+    padding-inline: 1.25rem;
+    color: var(--clr-primary-400);
   }
 }
 
@@ -19,17 +22,10 @@
 .title {
   font-size: 2rem;
   color: var(--clr-highlight-400);
-  padding-inline: 1.25rem;
-}
-
-.content {
-  color: var(--clr-primary-400);
-  padding-inline: 1.25rem;
 }
 
 .list {
-  color: var(--clr-primary-400);
-  padding-inline-start: 3rem;
+  padding-inline-start: 2rem;
   & span {
     color: var(--clr-highlight-400);
     font-size: 2rem;
