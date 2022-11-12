@@ -6,6 +6,8 @@
   display: grid;
   gap: 1.5rem;
   color: var(--clr-primary-400);
+  width: min(100%, 29.875rem);
+  margin-inline: auto;
 }
 
 .section {
