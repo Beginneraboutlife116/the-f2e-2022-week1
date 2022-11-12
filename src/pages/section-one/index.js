@@ -1,4 +1,6 @@
 import logo from "../../assets/logo/logo.svg"
+import logoText from "../../assets/logo/logo_text.svg"
+import start from "../../assets/main/start.svg"
 import icUser from "../../assets/ic/users.svg"
 import style from "./style.module.scss"
 
@@ -13,7 +15,11 @@ function SectionOne() {
           <div className={style.signal__right}></div>
         </div>
       </div>
-      <img src={logo} alt="logo" className={style.logo}></img>
+      <picture>
+        <source srcSet={logoText} media="(min-width: 75em)" />
+        <img src={logo} alt="logo" className={style.logo}></img>
+      </picture>
+      <img src={start} alt="起跑線" className={style["start-picture"]} />
       <h1 className={style.title}>互動式網頁設計</h1>
       <ul className={style.list}>
         <li>

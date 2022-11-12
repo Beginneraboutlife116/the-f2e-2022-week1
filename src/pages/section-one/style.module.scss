@@ -12,7 +12,10 @@
   background-size: clamp(7.0625rem, calc(-5.01rem + 48.29vw), 17.625rem),
     clamp(7.9375rem, calc(-4.85rem + 51.14vw), 19.125rem);
   @media (min-width: 75em) {
+    padding-block-start: min(4.2969vh, 2.75rem);
     background-size: 26.875rem, 30.3125rem;
+    background-position: 20% 57.5%, 100% 60%;
+    isolation: isolate;
   }
 }
 
@@ -22,8 +25,20 @@
   margin-inline: auto;
 }
 
+.start-picture {
+  display: none;
+  width: min(100%, 89.375rem);
+  @media (min-width: 75em) {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+  }
+}
+
 .title {
-  // * 1200px -> 2.9375rem
   @include util.pill(
     $padding: 0.175em 0.75em,
     $bg-clr: var(--clr-highlight-400),
@@ -33,18 +48,24 @@
   width: fit-content;
   margin-inline: auto;
   @include typo.fz-20-32-1200;
+  @media (min-width: 75em) {
+    @include util.pill(
+      $padding: 0.25em 1.25em,
+      $bg-clr: var(--clr-highlight-400),
+      $clr: var(--clr-black-100)
+    );
+    margin-block: -1.5rem min(6.25vh, 4rem);
+  }
 }
 
 .list {
   display: grid;
   gap: 1.25rem;
-
   &__title {
     color: var(--clr-primary-400);
     margin-block-end: 0.5rem;
     @include typo.fz-20-24-1200;
   }
-
   &__pill {
     display: flex;
     gap: 0.25rem;
@@ -55,6 +76,19 @@
       $bg-clr: var(--clr-primary-400),
       $clr: var(--clr-black-100)
     );
+    @media (min-width: 75em) {
+      @include util.pill(
+        $padding: 0.17em 1.17em,
+        $bg-clr: var(--clr-primary-400),
+        $clr: var(--clr-black-100)
+      );
+    }
+  }
+
+  @media (min-width: 75em) {
+    width: 53.85%;
+    margin-inline: auto;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -93,5 +127,22 @@
   }
   &__right {
     background-image: url("../../assets/main/ready_1.png");
+  }
+
+  @media (min-width: 75em) {
+    top: 50%;
+    translate: 0 -50%;
+    &__frame {
+      padding-inline-start: 2.25rem;
+      gap: 1rem;
+    }
+    &__title {
+      font-size: 2rem;
+    }
+    &__left,
+    &__middle,
+    &__right {
+      width: 3rem;
+    }
   }
 }

@@ -8,7 +8,6 @@
   bottom: 0;
   left: 50%;
   translate: -50%;
-  width: 93.1vw;
   width: min(100% - 1.25rem, 22.5rem);
   z-index: 1;
   justify-content: center;
@@ -19,12 +18,18 @@
 }
 
 .character {
-  width: 7rem;
+  width: 25vh;
   aspect-ratio: 3 / 5;
   &_middle {
-    width: 7.375rem;
+    width: 25vh;
   }
-  @media (min-width: 75em) {
+  @media (min-height: 50em) {
+    width: 13.8vh;
+    &_middle {
+      width: 14.53vh;
+    }
+  }
+  @media (min-width: 75em) and (min-height: 62.5em) {
     width: clamp(18.875rem, calc(9.69rem + 12.25vw), 21.9375rem);
     &_middle {
       width: clamp(19.9375rem, calc(10.38rem + 12.75vw), 23.125rem);
