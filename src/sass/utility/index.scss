@@ -4,3 +4,8 @@
   color: $clr;
   padding: $padding;
 }
+
+@mixin section-center-above-1200 {
+  width: min(100%, 73.75rem);
+  margin-inline: auto;
+}
