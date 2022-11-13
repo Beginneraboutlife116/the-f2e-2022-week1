@@ -8,12 +8,17 @@
   color: var(--clr-primary-400);
   width: min(100%, 29.875rem);
   margin-inline: auto;
+  @media (min-width: 75em) {
+    width: 73.75rem;
+    grid-template-columns: 24.4375rem 1fr;
+  }
 }
 
 .section {
   display: grid;
   gap: 1.5rem;
   padding-inline: 1.25rem;
+  font-weight: 500;
   & h3 {
     font-size: 2rem;
     color: var(--clr-highlight-400);
