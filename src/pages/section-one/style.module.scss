@@ -16,6 +16,9 @@
     background-size: 26.875rem, 30.3125rem;
     background-position: 20% 57.5%, 100% 60%;
   }
+  @media (min-width: 100em) {
+    background-position: 12.5% 55%, 90% 57.5%;
+  }
 }
 
 .logo {
