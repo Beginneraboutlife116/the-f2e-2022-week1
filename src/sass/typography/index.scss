@@ -89,10 +89,6 @@ body {
   font-weight: var(--fw, 700);
   line-height: var(--lh, 1.4);
   letter-spacing: var(--ls, 0.05em);
-  // font-size: 1.25rem;
-  // @media (min-width: 75em) {
-  //   font-size: 1.5rem;
-  // }
   @include fz-20-24-1200;
 }
 
