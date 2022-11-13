@@ -55,7 +55,7 @@
 .date-decoration {
   display: none;
   @media (min-width: 75em) {
-    width: 90rem;
+    width: min(100%, 90rem);
     min-height: clamp(8.125rem, calc(5.88rem + 3vw), 8.875rem);
     margin-inline: auto;
     background-image: url("../../assets/main/date_line.svg");

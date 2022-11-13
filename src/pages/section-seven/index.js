@@ -2,13 +2,15 @@ import { BannerHeader } from "../../components/header"
 import logoBlockStudio from "../../assets/logo/logo_blockstudio.svg"
 import logoKdan from "../../assets/logo/logo_kdan.svg"
 import logoTitanSoft from "../../assets/logo/logo_titansoft.svg"
+import treeLeft from "../../assets/bg/bg_decorate_04.png"
+import treeRight from "../../assets/bg/bg_decorate_08.png"
 
 import style from "./style.module.scss"
 
 export default function SectionSeven() {
   return (
-    <section>
-      <BannerHeader title="贊助單位" className={style.margin} />
+    <section className={"section " + style.section}>
+      <BannerHeader title="贊助單位" className={style["banner-header"]} />
       <ul className={style.list}>
         <li className={style.list__item}>
           <a
@@ -53,6 +55,10 @@ export default function SectionSeven() {
           </a>
         </li>
       </ul>
+      <div className={style.trees}>
+        <img src={treeLeft} alt="裝飾 - 樹" className={style.trees__left} />
+        <img src={treeRight} alt="裝飾 - 樹" className={style.trees__right} />
+      </div>
     </section>
   )
 }

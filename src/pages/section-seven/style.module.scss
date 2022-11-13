@@ -1,7 +1,14 @@
-@use '../../sass/utility' as *;
+@use "../../sass/utility" as *;
 
-.margin {
+.section {
+  position: relative;
+}
+
+.banner-header {
   margin-block-end: 3.3125rem;
+  @media (min-width: 75em) {
+    margin-block-end: 1.5626rem;
+  }
 }
 
 .button {
@@ -48,4 +55,27 @@
   place-items: center;
   text-align: center;
   gap: 2.5rem;
+  @media (min-width: 75em) {
+    width: 74.75rem;
+    margin-inline: auto;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.trees {
+  display: flex;
+  position: absolute;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  translate: -50% 0;
+  width: 100%;
+  justify-content: space-between;
+  z-index: -1;
+  &__left {
+    width: 20.6875rem;
+  }
+  &__right {
+    width: 21.375rem;
+  }
 }
