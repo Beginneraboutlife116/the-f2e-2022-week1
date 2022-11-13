@@ -102,7 +102,31 @@
 }
 
 .stick-sign-up {
+  scale: 0.5;
+  transform-origin: right bottom;
   position: fixed;
   right: 1.25rem;
   bottom: 1.25rem;
+  display: grid;
+  justify-items: center;
+  color: var(--clr-primary-400);
+  @media (min-width: 75em) {
+    scale: 1;
+  }
+}
+
+.map {
+  display: none;
+  @media (min-width: 75em) {
+    display: block;
+    position: fixed;
+    bottom: 2.0625rem;
+    left: 3.125rem;
+    z-index: 1;
+    &__now {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
 }

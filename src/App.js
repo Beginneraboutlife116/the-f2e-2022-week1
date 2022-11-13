@@ -12,17 +12,22 @@ import { JoinHand, SignUpButton } from "./components/button"
 import finish from "./assets/main/finish.svg"
 import finishLineLeft from "./assets/main/finishLine_l.svg"
 import finishLineRight from "./assets/main/finishLine_r.svg"
+import { ReactComponent as Map } from "./assets/main/map.svg"
+import mapNow from "./assets/main/map_now.gif"
 
 function App() {
   return (
     <main>
+      <div className="map">
+        <Map />
+        <img src={mapNow} alt="現在的位置" className="map__now"/>
+      </div>
       <a
         target="blank"
         href="https://2022.thef2e.com/users"
         className="btn__user">
         <button aria-label="前往F2E個人頁面"></button>
       </a>
-      {/* // TODO: 要載擺上一個「立即報名」的按鈕 */}
       <Sidebar />
       <Header />
       <Characters />
@@ -69,13 +74,13 @@ function App() {
           <h2>立即報名</h2>
         </div>
       </section>
-      {/* <div className="stick-sign-up">
+      <div className="stick-sign-up">
         <p>JOIN</p>
         <JoinHand />
         <a href="https://2022.thef2e.com/signup" target="blank">
           <SignUpButton />
         </a>
-      </div> */}
+      </div>
     </main>
   )
 }
