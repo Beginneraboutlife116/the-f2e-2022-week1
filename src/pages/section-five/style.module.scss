@@ -1,14 +1,18 @@
 @use "../../sass/typography" as typo;
 @use "../../sass/utility" as util;
 
-.margin {
+.banner-header {
   margin-block-end: clamp(4.25rem, calc(-4.87rem + 18.25vw), 8.8125rem);
+  @media (min-width: 75em) {
+    display: none;
+  }
 }
 
 .list {
   display: grid;
   justify-content: center;
   gap: 5.625rem;
+  background-color: var(--clr-secondary-400);
   &__item {
     display: grid;
     justify-items: center;
@@ -16,6 +20,14 @@
   &__title {
     color: var(--clr-highlight-400);
     @include typo.fz-24-60-750;
+  }
+  @media (min-width: 75em) {
+    padding-block-start: 5rem;
+    grid-template-columns: repeat(3, 1fr);
+    @include util.section-center-above-1200;
+    &__item:first-child {
+      translate: 0% -11%;
+    }
   }
 }
 
@@ -38,4 +50,33 @@
     color: var(--clr-highlight-400);
     font-size: 1.125rem;
   }
+}
+
+.date-decoration {
+  display: none;
+  @media (min-width: 75em) {
+    width: 90rem;
+    min-height: clamp(8.125rem, calc(5.88rem + 3vw), 8.875rem);
+    margin-inline: auto;
+    background-image: url("../../assets/main/date_line.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.first-week {
+  translate: 100% -30%;
+}
+
+.second-week {
+  translate: 0% -55%;
+  z-index: -1;
+}
+
+.third-week {
+  translate: -200% -35%;
+  z-index: -1;
 }

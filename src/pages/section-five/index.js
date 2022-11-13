@@ -2,12 +2,13 @@ import { BannerHeader } from "../../components/header"
 import { JoinHand, SignUpButton } from "../../components/button"
 import dateStart from "../../assets/main/date_start.svg"
 import dateUpload from "../../assets/main/date_upload.svg"
+import dateWeekLine from "../../assets/main/date_weekLine 1.svg"
 import style from "./style.module.scss"
 
 export default function SectionFive() {
   return (
-    <section>
-      <BannerHeader title="重要時程" className={style.margin} />
+    <section className={style.section}>
+      <BannerHeader title="重要時程" className={style["banner-header"]} />
       <ul className={style.list}>
         <li className={style.list__item}>
           <JoinHand />
@@ -31,6 +32,23 @@ export default function SectionFive() {
           <span>額外競賽：主題豐厚獎金等著你</span>
         </li>
       </ul>
+      <div className={style["date-decoration"]}>
+        <img
+          src={dateWeekLine}
+          alt="時間軸線"
+          className={style["first-week"]}
+        />
+        <img
+          src={dateWeekLine}
+          alt="時間軸線"
+          className={style["second-week"]}
+        />
+        <img
+          src={dateWeekLine}
+          alt="時間軸線"
+          className={style["third-week"]}
+        />
+      </div>
     </section>
   )
 }
