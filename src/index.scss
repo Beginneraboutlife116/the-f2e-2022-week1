@@ -4,10 +4,41 @@
 @use "./sass/utility";
 
 .section {
+  $parent: &;
   padding-block-end: 3.75rem;
   @media (min-width: 75em) {
     padding-block-start: 2.5rem;
     min-height: 100vh;
+  }
+}
+
+.decoration-section {
+  display: none;
+  @media (min-width: 75em) {
+    display: block;
+    min-height: 100vh;
+    background-image: url("./assets/bg/bg_decorate_01.png"),
+      url("./assets/bg/bg_decorate_05.png");
+    background-repeat: no-repeat;
+    background-size: 26.875rem, 30.3125rem;
+    background-position: 20% 57.5%, 100% 60%;
+    position: relative;
+  }
+}
+
+.finish-line {
+  width: 100%;
+  position: absolute;
+  top: 75%;
+  left: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  z-index: 2;
+  &__left {
+    translate: 2.5%;
+  }
+  &__right {
+    translate: -2.5%;
   }
 }
 
@@ -51,12 +82,12 @@
   display: grid;
   place-items: center;
   text-align: center;
-  @include fz-28-60-1200;
   &__logo {
     width: clamp(14.125rem, calc(-22.62rem + 73.5vw), 32.5rem);
   }
   & h2 {
     color: var(--clr-highlight-400);
+    @include fz-28-60-1200;
   }
 }
 

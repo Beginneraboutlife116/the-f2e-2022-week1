@@ -9,6 +9,9 @@ import SectionFive from "./pages/section-five"
 import SectionSix from "./pages/section-six"
 import SectionSeven from "./pages/section-seven"
 import { JoinHand, SignUpButton } from "./components/button"
+import finish from "./assets/main/finish.svg"
+import finishLineLeft from "./assets/main/finishLine_l.svg"
+import finishLineRight from "./assets/main/finishLine_r.svg"
 
 function App() {
   return (
@@ -36,6 +39,21 @@ function App() {
       </section>
       <SectionSix />
       <SectionSeven />
+      <section className="decoration-section">
+        <img src={finish} alt="終點線" />
+        <div className="finish-line">
+          <img
+            src={finishLineLeft}
+            alt="紅線左"
+            className="finish-line__left"
+          />
+          <img
+            src={finishLineRight}
+            alt="紅線右"
+            className="finish-line__right"
+          />
+        </div>
+      </section>
       <section className="cta">
         <div>
           <a href="https://2022.thef2e.com/" target="blank">
