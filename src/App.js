@@ -14,13 +14,15 @@ import finishLineLeft from "./assets/main/finishLine_l.svg"
 import finishLineRight from "./assets/main/finishLine_r.svg"
 import { ReactComponent as Map } from "./assets/main/map.svg"
 import mapNow from "./assets/main/map_now.gif"
+import cloud from "./assets/bg/bg_decorate_03.png"
+import picture from "./assets/bg/bg_decorate_07.png"
 
 function App() {
   return (
     <main>
       <div className="map">
         <Map />
-        <img src={mapNow} alt="現在的位置" className="map__now"/>
+        <img src={mapNow} alt="現在的位置" className="map__now" />
       </div>
       <a
         target="blank"
@@ -41,6 +43,8 @@ function App() {
           <p>區區修煉</p>
           <p>已經無法滿足了嗎？</p>
         </h2>
+        <img src={cloud} alt="雲朵" className="hero__cloud" />
+        <img src={picture} alt="圖" className="hero__picture" />
       </section>
       <SectionSix />
       <SectionSeven />

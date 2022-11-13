@@ -71,12 +71,32 @@
   display: grid;
   place-content: center;
   color: var(--clr-highlight-400);
+  position: relative;
+  & img {
+    display: none;
+  }
   &__title {
     @include fz-28-60-1200;
-    @media (min-width: 75em) {
-      & p {
-        display: inline-block;
-      }
+  }
+  @media (min-width: 75em) {
+    display: block;
+    margin-block-start: 14.5rem;
+    &__title p {
+      display: inline-block;
+    }
+    & img {
+      display: block;
+      position: absolute;
+      translate: -50% -50%;
+      top: 25%;
+    }
+    &__cloud {
+      width: 28.125rem;
+      left: 25%;
+    }
+    &__picture {
+      width: 23rem;
+      left: 80%;
     }
   }
 }
