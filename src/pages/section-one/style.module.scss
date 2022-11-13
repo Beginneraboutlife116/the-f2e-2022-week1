@@ -27,14 +27,18 @@
 
 .start-picture {
   display: none;
-  width: min(100%, 89.375rem);
   @media (min-width: 75em) {
+    width: 75%;
+    // min-height: 100vh;
     display: block;
     position: absolute;
     top: 50%;
     left: 50%;
     translate: -50% -50%;
     z-index: -1;
+  }
+  @media (min-width: 87.5em) {
+    width: 89.375rem;
   }
 }
 

@@ -40,7 +40,7 @@ function App() {
       <SectionSix />
       <SectionSeven />
       <section className="decoration-section">
-        <img src={finish} alt="終點線" />
+        <img src={finish} alt="終點線" className="finish" />
         <div className="finish-line">
           <img
             src={finishLineLeft}
