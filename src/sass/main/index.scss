@@ -21,6 +21,9 @@
     background-position: 20% 57.5%, 100% 60%;
     position: relative;
   }
+  @media (min-width: 100em) {
+    background-position: 12.5% 55%, 90% 57.5%;
+  }
 }
 
 .finish {
