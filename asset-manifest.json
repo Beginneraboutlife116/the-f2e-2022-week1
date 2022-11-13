@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/the-f2e-2022-week1/static/css/main.2ab48c8d.css",
+    "main.css": "/the-f2e-2022-week1/static/css/main.cb00599f.css",
     "main.js": "/the-f2e-2022-week1/static/js/main.4121f942.js",
     "static/js/787.de819be1.chunk.js": "/the-f2e-2022-week1/static/js/787.de819be1.chunk.js",
     "static/media/GenJyuuGothic-P-Bold.ttf": "/the-f2e-2022-week1/static/media/GenJyuuGothic-P-Bold.647639c06a35c659316a.ttf",
@@ -53,12 +53,12 @@
     "static/media/map.svg": "/the-f2e-2022-week1/static/media/map.6ac6956bc1af26356f56cd1dcf844e3f.svg",
     "static/media/users.svg": "/the-f2e-2022-week1/static/media/users.34e58b14cfddb1c96338b0a402d87bed.svg",
     "index.html": "/the-f2e-2022-week1/index.html",
-    "main.2ab48c8d.css.map": "/the-f2e-2022-week1/static/css/main.2ab48c8d.css.map",
+    "main.cb00599f.css.map": "/the-f2e-2022-week1/static/css/main.cb00599f.css.map",
     "main.4121f942.js.map": "/the-f2e-2022-week1/static/js/main.4121f942.js.map",
     "787.de819be1.chunk.js.map": "/the-f2e-2022-week1/static/js/787.de819be1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2ab48c8d.css",
+    "static/css/main.cb00599f.css",
     "static/js/main.4121f942.js"
   ]
 }
