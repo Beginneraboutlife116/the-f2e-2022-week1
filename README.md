@@ -7,11 +7,11 @@
 首先先
 
 ```
-git clone 
+git clone https://github.com/Beginneraboutlife116/the-f2e-2022-week1.git
 ```
 
 ```
-cd 
+cd the-f2e-2022-week1
 ```
 
 ```
